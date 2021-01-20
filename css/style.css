@@ -1,0 +1,169 @@
+@import url('http://fonts.cdnfonts.com/css/doctor-who');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/*mobile view/default*/
+
+* {
+  font-family: 'Roboto', sans-serif;
+
+}
+li:hover {
+  background-image: url('https://scottyzen.sirv.com/Images/v/button.png');
+  background-size: 100% 100%;
+  color: #27262c;
+  animation: spring 300ms ease-out;
+}
+li:active {
+  transform: translateY(4px);
+}
+
+@media screen and (max-width: 575px) {
+  .lg-screen {
+    /*visibility: hidden;*/
+    display: none;
+  }
+
+  .tiny-tardis {
+    max-width: 80%;
+    width: 80%;
+    float: right;
+
+  }
+
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  color: whitesmoke;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-color: black;
+}
+
+h1 {
+  text-align: center;
+  font-size: 200px;
+  margin: 20px;
+  font-family: 'Doctor Who', sans-serif;
+  color: whitesmoke;
+
+}
+
+.header-img img {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  color: white;
+
+}
+
+li {
+  width: 100%;
+  height: 42px;
+  margin-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background: black;
+  border: solid 1px;
+  border-color: whitesmoke;
+}
+
+.alert-info {
+  background-color: #EA684F;
+  height: 40px;
+  /*width: calc(100% - 2px);*/
+  border: 1px black solid;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.alert-info.hidden-on-desktop a {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+}
+
+.nav-links li a {
+  color: white;
+}
+
+@media screen and (min-width: 576px) {
+
+  .alert-info {
+    display: none;
+  }
+
+  .sm-screen {
+    display: none;
+  }
+
+  h1 {
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 100px;
+
+  }
+
+  nav {
+    display: inline-block;
+    float: right;
+  }
+
+  li {
+    background-color: black;
+    border:none;
+  }
+
+  .nav-links li a {
+    height: 42px;
+    margin: 1em;
+    color: white;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  .main {
+    width: 60%;
+    padding-right: 1.5em;
+  }
+
+  .sub-section {
+    width: 40%;
+    margin: 0;
+  }
+
+  .main, .sub-section {
+    float: left;
+    box-sizing: border-box;
+    margin-bottom: 8em;
+  }
+
+  .tiny-tardis {
+    display: none;
+  }
+}
+
+
